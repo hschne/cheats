@@ -3,6 +3,8 @@
 ;Keys are based on configuration found at ~/.tmux.conf
 % tmux, keys
 
+$ prefix: echo "ctrl+space"
+
 # reload config
 <prefix>+R
 
