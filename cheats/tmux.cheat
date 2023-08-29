@@ -1,13 +1,52 @@
+;Cheats for Tmux
+
+;Keys are based on configuration found at ~/.tmux.conf
 % tmux, keys
+
+# reload config
+<prefix>+R
+
+# install plugins 
+<prefix>+I
+
+# update plugins 
+<prefix>+U
+
+# clean plugins
+<prefix>+alt+u
 
 # enter copy mode
 <prefix>+[
 
+# new window
+<prefix>+n
+
 # kill window
-<prefix>+&
+<prefix>+X
 
 # kill pane
 <prefix>+x
 
 # respawn pane
 <prefix>+r
+
+# enter fzf mode
+<prefix>+F
+
+# show time
+<prefix>+t
+
+# enter command
+<prefix>+:
+
+# next window
+shift+alt+L
+
+# previous window
+shift+alt+L
+
+# split window vertically
+<prefix>+v 
+
+# split window horizontally
+<prefix>+s
