@@ -50,3 +50,20 @@ shift+alt+L
 
 # split window horizontally
 <prefix>+s
+
+# focus left window
+ctrl+h
+
+# focus right window
+ctrl+l
+
+# focus top window
+ctrl+k
+
+# focus bottom window
+ctrl+j
+
+# change layout (horizontal)
+<prefix>+<layout>
+
+$ layout: i=1; while [[ $i -le 6 ]]; do echo $i; i=$(($i+1)); done
