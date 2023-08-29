@@ -1,0 +1,13 @@
+% tmux, keys
+
+# enter copy mode
+<prefix>+[
+
+# kill window
+<prefix>+&
+
+# kill pane
+<prefix>+x
+
+# respawn pane
+<prefix>+r
