@@ -1,71 +1,97 @@
 ;Cheats for Tmux
 
+% tmux
+
+# Rename window
+tmux rename-window <name>
+
+# Rename session
+tmux rename-session <name>
+
+# Rotate window
+tmux rotate-window 
+
+# Swap current window
+$ index: tmux list-windows -F '#I'
+tmux swap-window -d -t <index> -d
+
+# Swap windows
+$ start: tmux list-windows -F '#I'
+$ target: tmux list-windows -F '#I'
+swap-window -d -s <start> -t <target>
+
 ;Keys are based on configuration found at ~/.tmux.conf
 % tmux, keys
 
 $ prefix: echo "ctrl+space"
 
-# reload config
+# Reload config
 <prefix>+R
 
-# install plugins 
+# Install plugins 
 <prefix>+I
 
-# update plugins 
+# Update plugins 
 <prefix>+U
 
-# clean plugins
+# Clean plugins
 <prefix>+alt+u
 
-# enter copy mode
+# Enter copy mode
 <prefix>+[
 
-# new window
+# New window
 <prefix>+n
 
-# kill window
+# Kill window
 <prefix>+X
 
-# kill pane
+# Kill pane
 <prefix>+x
 
-# respawn pane
+# Respawn pane
 <prefix>+r
 
-# enter fzf mode
+# Enter fzf mode
 <prefix>+F
 
-# show time
+# Show time
 <prefix>+t
 
-# enter command
+# Enter command
 <prefix>+:
 
-# next window
+# Next window
 shift+alt+L
 
-# previous window
+# Previous window
 shift+alt+L
 
-# split window vertically
+# Split window vertically
 <prefix>+v 
 
-# split window horizontally
+# Split window horizontally
 <prefix>+s
 
-# focus left window
+# Focus left window
 ctrl+h
 
-# focus right window
+# Focus right window
 ctrl+l
 
-# focus top window
+# Focus top window
 ctrl+k
 
-# focus bottom window
+# Focus bottom window
 ctrl+j
+
+# Rotate window left
+<prefix>+{
+
+# Rotate window right
+<prefix>+}
 
 # change layout (horizontal)
 <prefix>+<layout>
-
 $ layout: i=1; while [[ $i -le 6 ]]; do echo $i; i=$(($i+1)); done
+
