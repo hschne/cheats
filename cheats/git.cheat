@@ -1,4 +1,6 @@
+; ==========
 % git
+; ==========
 
 ;Variables
 $ branch: git branch | awk '{print $NF}'
@@ -43,7 +45,7 @@ git commit -m "<description>"
 # Merges branch into current
 git merge <branch>
 
-# Abort merge,
+# Abort merge
 git merge --abort
 
 # Displays log of commits
@@ -64,7 +66,12 @@ git tag --sort version:refname | tail -n 1
 # Delete latest tag
 git tag -d $(git tag --sort version:refname | tail -n 1)
 
+# Open mergetool
+git mergetool
+
+; ==========
 % git, alias
+; ==========
 
 ; Custom aliases & utilities
 ; ==========================
@@ -105,14 +112,26 @@ gntag
 # Amend latest commit
 gfu
 
-# Abort rebase
-grba
+# Open mergetool
+gmt
 
 ; Aliases from ZSH git aliases
 ; ============================
 
+# Checkout
+gco
+
+# Push
+gp
+
+# Pull
+gl
+
 # Start interactive rebase
 grbi
+
+# Abort rebase
+grba
 
 # Diff files
 g diff
