@@ -1,0 +1,9 @@
+% navi
+
+# Clone my cheats
+cd /home/hschne/.local/share/navi/cheats/
+git clone git@github.com:hschne/cheats hschne__cheats
+
+# Go to my cheats
+cd /home/hschne/.local/share/navi/cheats/
+
