@@ -1,0 +1,15 @@
+;Cheats for alsa-utils
+
+% arecord
+
+$ duration: echo "5 10 20 30" | tr ' ' '\n'
+
+# Record audio 
+arecord -vv -f cd -d <duration> <file>
+
+% aplay
+
+
+# Play audio file
+aplay <file>
+
