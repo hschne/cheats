@@ -34,3 +34,7 @@ docs
 
 # Change to Pictures
 pics
+
+# Swap escape, enable compose
+setxkbmap -option caps:swapescape
+setxkbmap -option compose:ralt
