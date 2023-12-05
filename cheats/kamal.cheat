@@ -1,0 +1,14 @@
+% kamal
+
+# Release deploy lock
+kamal lock release
+
+# Deploy app
+kamal deploy 
+
+# Deploy without local build
+kamal deploy --skip-push
+
+# Show app logs
+kamal app logs
+
