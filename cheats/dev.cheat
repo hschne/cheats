@@ -1,0 +1,9 @@
+% browser-sync
+
+# Run browser sync as server 
+browser-sync start --server --files "**/*"
+
+$ server: docker images --- --headers 1 --column 3
+
+# Run browser sync as proxy
+browser-sync start --proxy <server> --files "**/*"
