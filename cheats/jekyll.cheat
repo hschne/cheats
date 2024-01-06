@@ -1,0 +1,21 @@
+% jekyll
+
+# Build the site and preview drafts
+bundle exec jekyll serve --watch --drafts
+
+% jekyll-compose
+
+# Create a new post
+bundle exec jekyll compose "<name>"
+
+# Create a new draft post
+bundle exec jekyll compose "<name>" --draft
+
+$ path: ls _drafts
+
+# Publish a draft post
+bundle exec jekyll publish <path>
+
+# Publish a draft post with a specific date
+$ date: date +%F
+bundle exec jekyll publish <path> --date <date>
