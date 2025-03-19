@@ -1,5 +1,7 @@
 % docker-compose
 
+$ file: ls -p | grep -v 
+
 # Builds, (re)creates, starts, and attaches to containers for all services
 docker-compose up
 
@@ -7,9 +9,6 @@ docker-compose up
 docker-compose up -d
 
 # Builds, (re)creates, starts, and attaches to containers for a service
-docker-compose up -d <service_name>
-
-# Builds, (re)creates, starts, and dettaches to containers for a service
 docker-compose up -d <service_name>
 
 # Print the last lines of a service’s logs
@@ -20,3 +19,9 @@ docker-compose logs -f --tail 100 <service_name>
 
 # Stops containers and removes containers, networks created by up
 docker-compose down
+
+# Start docker compose with file
+docker-compose -f <file> down
+
+# Stops containers and removes containers, networks created by up with file
+docker-compose -f <file> down
