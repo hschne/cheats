@@ -1,0 +1,19 @@
+; ==========
+% ssh
+; ==========
+
+; Variables
+$ private: grep -slR "PRIVATE" ~/.ssh
+$ public: ls ~/.ssh/*.pub
+
+# Start SSH Agent
+eval "$(ssh-agent -s)"
+
+# Add a private key to the SSH agent
+ssh-add <private>
+
+# Generate a new key
+ssh-keygen -t rsa
+
+# Copy SSH Key to host
+cat <public> | ssh <host> 'cat >> .ssh/authorized_keys'

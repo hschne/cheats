@@ -9,7 +9,6 @@ arecord -vv -f cd -d <duration> <file>
 
 % aplay
 
-
 # Play audio file
 aplay <file>
 
