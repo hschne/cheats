@@ -51,4 +51,14 @@ docker logs --tail 100 <container_id> -f
 # Create new network
 docker network create <network_name>
 
+# To use a volume in the container:
+docker run -v <volume-name>:<folder-path-in-container> <image>
 
+# To link current folder between host and container for development:
+docker run <image-name> -v $(pwd):<folder-path-in-container> <image>
+
+# To start a container with an interactive shell:
+docker run -it <image-name> /bin/bash
+
+# Restore a backup to a local MySQL database
+cat <dump> | docker exec -i <container> /usr/bin/mysql -u root --password=root <database>
